@@ -15,6 +15,7 @@
     --table-color: #f2f2f2;
     --addnew-color: #eadfdf;
     --BD-color: #d9d9d9;
+    --shadow-color:rgba(0, 0, 0, 0.5);
 
     /* Transition */
     --tran-02: all .2s ease;
@@ -40,6 +41,7 @@ body.dark{
     --table-color: #6a6666;
     --addnew-color: #6a6666;
     --BD-color: #3A3B3C;
+    --shadow-color:rgba(138, 134, 134, 0.5);
 }
 
 .sidebar{
@@ -446,7 +448,8 @@ body.dark .switch::before{
     width: 90%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 8px 8px #707070 ;
+    /* box-shadow: 8px 8px #707070 ; */
+    box-shadow: 0 0 20px var(--shadow-color);
 }
 
 .home .home-main .main-footer{
