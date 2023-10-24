@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f2726a;
+}
+
+body{
+    height: 100vh;
+    background-color: #E4E9F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body .container{
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.introduce{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-radius: 12px;
+    width: 650px;
+    height: 400px;
+}
+
+#hiddenContent{
+    margin-left: 20px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Arial;
+    opacity: 0;
+    max-height: 0;
+    max-width: 350px;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+#hiddenContent.active {
+    opacity: 1;
+    max-height: 300px; 
+}
+
+#hiddenContent .text{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+#hiddenContent h2{
+    margin: 20px 0;
+}
+
+.card{
+    background-color: #242628;
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.card h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 55px;
+}
+.card p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+
+.card-img{
+    width: 120px;
+    height: 120px;
+    border: 3.5px solid var(--primary-color) ;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    transform: translateY(40px);
+    transition: .3s;
+    cursor: pointer;
+}
+.card-img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: none;
+    
+}
+
+.card-socical a{ 
+    font-size: 1.8rem;
+    color: white;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+.card-socical a:hover{
+    color: var(--primary-color);
+}
+
+.card button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: white;
+    margin-top: 25px;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: var(--primary-color);
+}

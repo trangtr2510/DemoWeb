@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="/baitaplon/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <i class="fa-solid fa-graduation-cap "></i>
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Classes369</span>
+                    <span class="professtion">Quản lý sinh viên</span>
+                </div>
+            </div>
+            <i class="fa-regular fa-circle-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                        <input type="text" name="" id="" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link active" title="Home">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="fa-solid fa-house-chimney icon"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link clas" title="Danh sách sinh viên">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="fa-solid fa-users-rectangle icon"></i>
+                            <span class="text nav-text">Danh sách sinh viên</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" title="Danh sách lớp">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="fa-solid fa-address-book icon"></i>
+                            <span class="text nav-text">Danh sách lớp</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" title="Giảng viên">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="fa-solid fa-graduation-cap icon"></i>
+                            <span class="text nav-text">Giảng viên</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" title="Điểm">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="fa-solid fa-font icon"></i>
+                            <span class="text nav-text">Điểm</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" title="Thống kê">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-line icon"></i>
+                            <span class="text nav-text">Thống kê</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link2" id="logout" title="Đăng xuất">
+                    <a href="#">
+                        <i class="fa-solid fa-reply-all icon"></i>
+                        <span class="text nav-text">Đăng xuất</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="fa-regular fa-moon icon moon"></i>
+                        <i class="fa-regular fa-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+
+<!-- Menu 1 - Home -->
+
+        <div id="home" class="HOME Home actived">
+            <div class="Home home-title">
+                <p><span class="text-title">Classes</span>369</p>
+            </div>
+            <div class="Home home-main">
+                <div class="main main-title">
+                    <div class="main-title">
+                        <h1 class="text-blue">Mọi thứ</h1>
+                        <span class="text-black">cần thiết cho việc</span>
+                        <h1 class="text-blue">quản lý sinh viên</h1>
+                        <p>Classes là 1 phần mềm giúp việc quản lý sinh viên đơn giản hơn.</p>
+                    </div>
+                    <span class="main-title logo">
+                        <img class="logo-img" src="/baitaplon/img/Logo-DH-Cong-Nghe-Dong-A-EAUT.webp" alt="">
+                    </span>
+                </div>
+                <div class="main main-img">
+                    <img src="/baitaplon/img/1596783502680-vai-tro-chuc-nang-nhiem-vu-cua-truong-phong-hanh-chinh-1.jpg" alt="">
+                </div>
+                <div class="main main-footer">
+                    <p>Hàng ngàn tổ chức giáo dục ngày nay sử dụng hệ thống quản lý trường học phân mảnh và nền tảng 
+                       phần mềm để quản lý các hoạt động hành chính và học tập của sinh viên. Classes369 cung cấp
+                        một vài tiện ích giúp việc quản lý trở nên dễ dàng hơn.</p>
+                    </p>
+                </div>
+            </div>
+            <div class="Home home-footer">
+                <div class="footer-text">
+                    <h1><span class="text">Một số tiện ích của Classes369</span></h1>
+                </div>
+                <div class="footer-utilities">
+                    <ul>
+                        <li class="list">
+                            <i class="fa-solid fa-users-rectangle icon"></i>
+                            <span class="list list-text">DS Sinh viên</span>
+                        </li>
+                        <li class="list">
+                            <i class="fa-solid fa-graduation-cap icon"></i>
+                            <span class="list list-text">Giảng viên</span>
+                        </li>
+                        <li class="list">
+                            <i class="fa-solid fa-font icon"></i>
+                            <span class="list list-text">Điểm</span>
+                        </li>
+                        <li class="list">
+                            <i class="fa-solid fa-chart-line icon"></i>
+                            <span class="list list-text">Thống kê</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- Menu 2 - Danh sách sinh viên -->
+
+        <div id="student" class="HOME student-list">
+           <div class="student-list student-list_text">
+            <p class="text">Danh sách sinh viên</p>
+           </div>
+           <div class=" student-list add-new">
+            <ul>
+                <li class="add-new addnew-sutdent" id="addnew-sutdent" >
+                    <a href="#" >
+                        <i class="fa-solid fa-user-plus icon"></i>
+                        <span class="addnew-text">Thêm sinh viên</span>
+                    </a>
+                </li>
+                <li class="add-new addnew-excel" id="addnew-excel">
+                    <a href="#">
+                        <i class="fa-solid fa-folder-plus icon"></i>
+                        <span class="addnew-text">Nhập dữ liệu từ Excel</span>
+                    </a>
+                </li>
+            </ul>
+           </div>
+           <div id="error-message"></div>
+           <div class="student-list board">
+                <div id="search-container">
+                    <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Tìm kiếm mã sinh viên...">
+                    <input type="text" id="searchInputClass" onkeyup="searchTableClass()" placeholder="Tìm kiếm lớp sinh viên...">
+                </div>
+                <div id="tableContainer">
+                    <table class="board list-user" id="board">
+                        <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã sinh viên</th>
+                            <th>Họ và tên</th>
+                            <th>Lớp</th>
+                            <th>Giới tính</th>
+                            <th>Ngày sinh</th>
+                            <th>Quê quán</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                        <tbody id="listUser">
+
+                        </tbody>
+                    </table>
+                </div>
+           </div>
+           <div id="user" >
+                <div class="show-add">
+                    <div class="User user" >
+                        <p class="text">Thêm sinh viên</p>
+                        <form id="dataform">
+                            <div class=" user MSV-user">
+                                <span class="import">Mã sinh viên: </span>
+                                <input type="text" id="MSV" class="SV-user MSV-user_import">
+                            </div>
+                            <div class=" user name-user">
+                                <span class="import">Họ và tên: </span>
+                                <input type="text" id="fullname" class="SV-user name-user_import">
+                            </div>
+                            <div class=" user class-user">
+                                <span class="import">Lớp: </span>
+                                <input type="text" id="class" class="SV-user class-user_import">
+                            </div>
+                            <div  class="user gender-user" id="gender">
+                                <span class="import">Giới tính: </span>
+                                <input type="radio" id="girl" class="gender" name="gender" value="Nữ">
+                                <span class="girl">Nữ</span>
+                                <input type="radio" id="boy" class="gender" name="gender" value="Nam">
+                                <span class="boy">Nam</span>
+                            </div>
+                            <div class=" user birth-user">
+                            <span class="import">Ngày sinh: </span>
+                                <input type="date" id="birth" class="SV-user birth-user_import">
+                            </div>
+                            <div class=" user hometown-user">
+                                <span class="import">Quê quán: </span>
+                                <input type="text" id="hometowm" class="SV-user class-user_import">
+                            </div>
+                        </form>
+                        <div class="buttom-user">
+                            <button type="submit" class="addnew-user" id="addnew-user">Thêm</button>
+                            <button type="submit" class="addnew-exit" id="addnew-exit1">Thoát</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           
+           <div id="editModal" class="Edit">
+                <div class="show-edit">
+                    <p class="text">Chỉnh sửa thông tin</p>
+                        <div id="editModalContent">
+                            <div class="Edit edit">
+                                <span for="editName" class="import">Mã sinh viên:</span>
+                                <input type="text" id="editName" class="editinput" required>
+                            </div>
+                            <div class="Edit edit">
+                                <span for="editAge" class="import">Họ và tên:</span>
+                                <input type="text" id="editAge" class="editinput" required>
+                            </div>
+                            <div class="Edit edit">
+                                <span for="editAge" class="import">Lớp:</span>
+                                <input type="text" id="editClass" class="editinput"  required>
+                            </div>
+                            <div class="Edit edit">
+                                <span class="import">Giới tính:</span>
+                                <input type="radio" id="editGender" name="editGender" value="Nữ" required>
+                                <label for="editMale">Nữ</label>
+                                <input type="radio" id="editGender" name="editGender" value="Nam" required>
+                                <label for="editFemale">Nam</label>
+                            </div>
+                            <div class="edit">
+                                <span for="editAge" class="import">Ngày sinh:</span>
+                                <input type="date" id="editDate" class="editinput"  required>
+                            </div>
+                            <div class="edit">
+                                <span class="import">Quê quán: </span>
+                                <input type="text" id="editHometowm" class="editinput" required>
+                            </div>
+                            <div class="editbutton">
+                                <button type="button" onclick="saveEdit()" class="button-save">Save</button>
+                                <button type="button" onclick="cancelEdit()" class="button-cancel">Cancel</button>
+                            </div>
+                        </div>
+                </div>
+          </div>
+
+          <div id="excel">
+                <div class="add-excel">
+                    <p>Vui lòng chọn tệp có định dạng: </p>
+                    <table class="add-excel board">
+                        <tr>
+                            <td>Mã sinh viên</td>
+                            <td>Họ và tên</td>
+                            <td>Lớp</td>
+                            <td>Giới tính</td>
+                            <td>Ngày sinh</td>
+                            <td>Quê quán</td>
+                        </tr>
+                        <tr>
+                            <td>Int</td>
+                            <td>String</td>
+                            <td>String</td>
+                            <td>Nữ/Nam</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>String</td>
+                        </tr>
+                    </table>
+                    <input type="file" id="excelFileInput" accept=".xls, .xlsx">
+                    <button type="button" class="loadexcel" id="loadexcel">Exit</button>
+                </div>
+          </div>
+        </div>
+
+<!-- Mennu 3 - Danh sách lớp -->
+
+        <div class="HOME class-list">
+            <div class="class-list class-list_text">
+                <p class="text">Danh sách Lớp</p>
+               </div>
+               <div class=" class-list add-new">
+                <ul>
+                    <li class="add-new addnew-class" id="addnew-class1" >
+                        <a href="#" >
+                            <i class="fa-solid fa-user-plus icon"></i>
+                            <span class="addnew-text">Thêm Lớp</span>
+                        </a>
+                    </li>
+                    <li class="add-new addnew-excel" id="addnew-excel2">
+                        <a href="#">
+                            <i class="fa-solid fa-folder-plus icon"></i>
+                            <span class="addnew-text">Nhập dữ liệu từ Excel</span>
+                        </a>
+                    </li>
+                </ul>
+               </div>
+               <div id="error-message2"></div>
+               <div class="class-list board">
+                    <div id="search-container">
+                        <input type="text" id="searchInput2" onkeyup="searchTable2()" placeholder="Tìm kiếm lớp...">
+                        <input type="text" id="searchInput3" onkeyup="searchTable3()" placeholder="Tìm kiếm theo khoa...">
+                    </div>
+                    <table class="board list-user" id="board2">
+                        <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên lớp</th>
+                            <th>Tên khoa</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                        <tbody id="listClass">
+    
+                        </tbody>
+                    </table>
+               </div>
+               <div id="user-class" >
+                    <div class="show-add2">
+                        <div class="User-class user-class" >
+                            <p class="text">Thêm lớp</p>
+                            <form id="dataform2">
+                                <div class="user-class name-class">
+                                    <span class="import">Tên lớp: </span>
+                                    <input type="text" id="Mclass" class="SV-user MSV-user_import">
+                                </div>
+                                <div class=" user-class name-khoa">
+                                    <span class="import">Tên khoa: </span>
+                                    <input type="text" id="fullclass" class="SV-user name-user_import">
+                                </div>
+                            </form>
+                            <div class="button-class">
+                                <button type="submit" class="addnew-class" id="addnew-class">Thêm</button>
+                                <button type="submit" class="addnew-exit" id="addnew-exit2">Thoát</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               
+               <div id="editModal2" class="Edit-second">
+                    <div class="show-edit2">
+                        <p class="text">Chỉnh sửa thông tin</p>
+                            <div id="editModalContent2">
+                                <div class="Edit-second edit-second">
+                                    <span for="editName" class="import-second">Tên lớp:</span>
+                                    <input type="text" id="editName2" class="editinput" required>
+                                </div>
+                                <div class=" edit-second">
+                                    <span for="editAge" class="import-second">Tên khoa:</span>
+                                    <input type="text" id="editAge2" class="editinput" required>
+                                </div>
+                                <div class="editbutton2">
+                                    <button type="button" onclick="saveEditt()" class="button-save2">Save</button>
+                                    <button type="button" onclick="cancelEditt()" class="button-cancel2">Cancel</button>
+                                </div>
+                            </div>
+                    </div>
+              </div>
+    
+              <div id="excel2">
+                    <div class="add-excel2">
+                        <p>Vui lòng chọn tệp có định dạng: </p>
+                        <table class="add-excel2 board">
+                            <tr>
+                                <td>Tên lớp</td>
+                                <td>Tên khoa</td>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td>String</td>
+                            </tr>
+                        </table>
+                        <input type="file" id="excelFileInput2" accept=".xls, .xlsx">
+                        <button type="button" class="loadexcel" id="loadexcel2">Exit</button>
+                    </div>
+              </div>
+        </div>
+
+<!-- Menu 4 - Danh sách giảng viên theo môn -->
+
+        <div class="HOME lecturers">
+            <div class="lecturers lecturers-text"><p>Giảng Viên Môn :</p></div>
+            
+            <div class="lecturers lecturers-box">
+                <div class="lecturers-box lecturers-box1">
+                    <div class="lecturers-box1 lecturers-box1_cpp">
+                        
+                        <ul>
+                            <li>
+                                <p>Lập Trình C++</p>
+                            </li>
+                            <li class="lecturers-box1_cpp addnew-lecturers" id="addnew-lecturers">
+                                <a href="#" >
+                                    <i class="fa-solid fa-user-plus icon"></i>
+                                    <span class="">Thêm Giảng viên</span>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <table class="board list-user" id="board6">
+                            <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Số điện thoại</th>
+                                <th>Trình độ</th>
+                                <th>Phụ trách lớp - khoa</th>
+                            </tr>
+                            
+                        </thead>
+                            <tbody id="listGVcpp">
+                                <tr>
+                                    <th>1</th>
+                                    <th>Vũ Văn Mạnh</th>
+                                    <th>0398238886</th>
+                                    <th>Thạc sĩ</th>
+                                    <th>DCCNTT1-Công nghệ thông tin</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>Nguyễn Mai Anh</th>
+                                    <th>0988865432</th>
+                                    <th>Tiến sĩ</th>
+                                    <th>DCCNTT2-Công nghệ thông tin</th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="lecturers-box1 lecturers-box1_web">
+                        
+                        <ul>
+                            <li>
+                                <p>Thiết Kế Web</p>
+                            </li>
+                            <li class="lecturers-box1_web addnew-lecturers" id="addnew-lecturers2">
+                                <a href="#" >
+                                    <i class="fa-solid fa-user-plus icon"></i>
+                                    <span class="">Thêm Giảng viên</span>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <table class="board list-user" id="board7">
+                            <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Số điện thoại</th>
+                                <th>Trình độ</th>
+                                <th>Phụ trách lớp - khoa</th>
+                            </tr>
+                            
+                        </thead>
+                            <tbody id="listGVcpp">
+                                <tr>
+                                    <th>1</th>
+                                    <th>Mai Văn Thúy</th>
+                                    <th>0398238886</th>
+                                    <th>Cử nhân</th>
+                                    <th>DCCNTT3-Công nghệ thông tin</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>Nguyễn Thùy Anh</th>
+                                    <th>0988865432</th>
+                                    <th>Tiến sĩ</th>
+                                    <th>DCCNTT2-Công nghệ thông tin</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="lecturers-box lecturers-box2">
+                    <div class="lecturers-box2 lecturers-box2_maths">
+                        <ul>
+                            <li>
+                                <p>Giải tích</p>
+                            </li>
+                            <li class="lecturers-box2_maths addnew-lecturers" id="addnew-lecturers3">
+                                <a href="#" >
+                                    <i class="fa-solid fa-user-plus icon"></i>
+                                    <span class="">Thêm Giảng viên</span>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <table class="board list-user" id="board8">
+                            <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Số điện thoại</th>
+                                <th>Trình độ</th>
+                                <th>Phụ trách lớp - khoa</th>
+                            </tr>
+                            
+                        </thead>
+                            <tbody id="listGVcpp">
+                                <tr>
+                                    <th>1</th>
+                                    <th>Đinh Văn Nam</th>
+                                    <th>0398286766</th>
+                                    <th>Cử nhân</th>
+                                    <th>DCCNTT3-Công nghệ thông tin</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>Đặng Thế Vinh</th>
+                                    <th>0982568808</th>
+                                    <th>Tiến sĩ</th>
+                                    <th>DCCNTT1-Công nghệ thông tin</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="lecturers-box2 lecturers-box2_pysical">
+                        <ul>
+                            <li>
+                                <p>Vật Lý</p>
+                            </li>
+                            <li class="lecturers-box2_pysical addnew-lecturers" id="addnew-lecturers4">
+                                <a href="#" >
+                                    <i class="fa-solid fa-user-plus icon"></i>
+                                    <span class="">Thêm Giảng viên</span>
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <table class="board list-user" id="board9">
+                            <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ tên</th>
+                                <th>Số điện thoại</th>
+                                <th>Trình độ</th>
+                                <th>Phụ trách lớp - khoa</th>
+                            </tr>
+                            
+                        </thead>
+                            <tbody id="listGVcpp">
+                                <tr>
+                                    <th>1</th>
+                                    <th>Nguyễn Văn Thăng</th>
+                                    <th>0957968810</th>
+                                    <th>Cử nhân</th>
+                                    <th>DCCNTT3-Công nghệ thông tin</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>Đào Văn Huy</th>
+                                    <th>0982589987</th>
+                                    <th>Tiến sĩ</th>
+                                    <th>DCCNTT2-Công nghệ thông tin</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="lecturers" >
+                <div class="show-add3">
+                    <div class="User-lecturers user-lecturers" >
+                        <p class="text">Thêm Giảng viên</p>
+                        <form id="dataform3">
+                            <div class="user-lecturers name-lecturers">
+                                <span class="import">Họ tên: </span>
+                                <input type="text" id="namelecturers" class="SV-user MSV-user_import">
+                            </div>
+                           <span id="error-lecturers1"></span>
+                            <div class="user-lecturers phone-lecturers">
+                                <span class="import2">Số điện thoại: </span>
+                                <input type="text" id="phone-lecturers" class="SV-user name-user_import">
+                            </div>
+                            <span id="error-lecturers2"></span>
+                            <div class="user-lecturers TD-lecturers">
+                                <span class="import">Trình độ: </span>
+                                <input type="text" id="TD-lecturers" class="SV-user class-user_import">
+                            </div>
+                            <span id="error-lecturers3"></span>
+                            <div class="user-lecturers Ptr-lecturers">
+                            <span class="import2">Phụ trách lớp - khoa: </span>
+                                <input type="text" id="Ptr-lecturers" class="SV-user birth-user_import">
+                            </div>
+                            <span id="error-lecturers4"></span>
+                        </form>
+                        <div class="button-lecturers">
+                            <button type="submit" class="addnew-lecturers" id="addnew-lecturers2" onclick="lecturers()">Thêm</button>
+                            <button type="button" class="addnew-exit" id="addnew-exit3">Thoát</button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+          </div>
+        </div>
+
+<!-- Menu 5 - Danh scahs điểm theo từng lớp -->
+
+        <div class="HOME point">
+
+            <div class="point point-list_text">
+                <p class="text">Danh sách Điểm</p>
+               </div>
+
+               <div>
+               <label for=""></label>
+               <select id="options" onchange="showSelectedTable()">
+                   <option value="" disabled selected>Chọn lớp</option>
+                   <option value="option1">DC-CNTT-1</option>
+                   <option value="option2">DC-CNTT-2</option>
+                   <option value="option3">DC-CNTT-3</option>
+               </select>
+               <input type="text" id="search" onkeyup="searchTables()" placeholder="Tìm kiếm theo mã sinh viên...">
+            </div>
+
+               <div id="error-message3"></div>
+               <div id="tableContent" class="tableContent board">
+
+                <table class="board list-user" id="board3">
+                    <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã sinh viên</th>
+                        <th>Họ và tên</th>
+                        <th>Khoa</th>
+                        <th>Lớp</th>
+                        <th>Điểm rèn luyện</th>
+                        <th>GPA</th>
+                        <th>Hành động</th>
+                    </tr>
+                   
+                </thead>
+                    <tbody id="listPoint">
+                        <tr>
+                            <td>1</td>
+                            <td>190345</td>
+                            <td>Lê Thiên Lực</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>78</td>
+                            <td>3.00</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>190457</td>
+                            <td>Lê Mạnh Cường</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>60</td>
+                            <td>2.87</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>190876</td>
+                            <td>Đỗ Văn Đạt</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>88</td>
+                            <td>3.12</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>190573</td>
+                            <td>Nguyễn Minh Phương</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>85</td>
+                            <td>3.21</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>190372</td>
+                            <td>Đào Phương Ly</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>76</td>
+                            <td>2.60</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>190423</td>
+                            <td>Đặng Văn Huy</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>54</td>
+                            <td>2.25</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>190445</td>
+                            <td>Lê Văn Mạnh</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>58</td>
+                            <td>2.00</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>190467</td>
+                            <td>Vũ Mạnh Cường</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>68</td>
+                            <td>2.87</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>190896</td>
+                            <td>Đỗ Văn Minh</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>88</td>
+                            <td>2.89</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>190573</td>
+                            <td>Trần Thị Minh Phương</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-1</td>
+                            <td>85</td>
+                            <td>3.51</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <table class="board list-user" id="board4">
+                    <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã sinh viên</th>
+                        <th>Họ và tên</th>
+                        <th>Khoa</th>
+                        <th>Lớp</th>
+                        <th>Điểm rèn luyện</th>
+                        <th>GPA</th>
+                        <th>Hành động</th>
+                    </tr>
+                    
+                </thead>
+                    <tbody id="listPoint">
+                        <tr>
+                            <td>1</td>
+                            <td>190445</td>
+                            <td>Lê Văn Mạnh</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-2</td>
+                            <td>58</td>
+                            <td>2.00</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>190467</td>
+                            <td>Vũ Mạnh Cường</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-2</td>
+                            <td>68</td>
+                            <td>2.87</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>190896</td>
+                            <td>Đỗ Văn Minh</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-2</td>
+                            <td>88</td>
+                            <td>2.89</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>190573</td>
+                            <td>Trần Thị Minh Phương</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-2</td>
+                            <td>85</td>
+                            <td>3.51</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>190388</td>
+                            <td>Đào Phương Minh</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-2</td>
+                            <td>76</td>
+                            <td>2.80</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>190423</td>
+                            <td>Đặng Thu Thủy</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-2</td>
+                            <td>74</td>
+                            <td>2.85</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                            <tr>
+                                <td>7</td>
+                                <td>190345</td>
+                                <td>Lê Thiên Lực</td>
+                                <td>Công nghệ thông tin</td>
+                                <td>DC-CNTT-2</td>
+                                <td>78</td>
+                                <td>3.00</td>
+                                <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                    <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>190457</td>
+                                <td>Lê Mạnh Cường</td>
+                                <td>Công nghệ thông tin</td>
+                                <td>DC-CNTT-2</td>
+                                <td>60</td>
+                                <td>2.87</td>
+                                <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                    <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>190876</td>
+                                <td>Đỗ Văn Đạt</td>
+                                <td>Công nghệ thông tin</td>
+                                <td>DC-CNTT-2</td>
+                                <td>88</td>
+                                <td>3.12</td>
+                                <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                    <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                                </td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <table class="board list-user" id="board5">
+                    <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã sinh viên</th>
+                        <th>Họ và tên</th>
+                        <th>Khoa</th>
+                        <th>Lớp</th>
+                        <th>Điểm rèn luyện</th>
+                        <th>GPA</th>
+                        <th>Hành động</th>
+                    </tr>
+                    
+                </thead>
+                    <tbody id="listPoint">
+                        <tr>
+                            <td>1</td>
+                            <td>190745</td>
+                            <td>Trần Văn Mạnh</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>68</td>
+                            <td>2.70</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>190407</td>
+                            <td>Đỗ Đại Dương</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>68</td>
+                            <td>2.07</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>190856</td>
+                            <td>Cao Văn Tùng</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>76</td>
+                            <td>2.46</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>190523</td>
+                            <td>Nguyễn Minh Phương</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>85</td>
+                            <td>3.45</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>190928</td>
+                            <td>Nguyễn Thị Thúy</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>76</td>
+                            <td>3.20</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>190823</td>
+                            <td>Phạm Thị Thu Hương</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>89</td>
+                            <td>3.47</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>190345</td>
+                            <td>Lê Thiên Lực</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>78</td>
+                            <td>3.00</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>190457</td>
+                            <td>Lê Mạnh Cường</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>60</td>
+                            <td>2.87</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>190876</td>
+                            <td>Đỗ Văn Đạt</td>
+                            <td>Công nghệ thông tin</td>
+                            <td>DC-CNTT-3</td>
+                            <td>88</td>
+                            <td>3.12</td>
+                            <td><span><i class="duongke fa-solid fa-pen icon" title="Chỉnh sửa"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark delete-icon" title="Xóa" id=" close-excel"></i></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<!-- Menu 6 - Thống kê -->
+
+        <div class="HOME statistical">
+            <div class="statistical statistical-1">
+                <div class="statistical-1 statistical-1_sumSV">
+                    <p>Tổng số sinh viên</p>
+                    <p>599</p>
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+                <div class="statistical-1 statistical-1_sumGV">
+                    <p>Tổng số giảng viên</p>
+                    <p>60</p>
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="statistical-1 statistical-1_sumclass">
+                    <p>Tổng số lớp học</p>
+                    <p>20</p>
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+            </div>
+
+            <div class="statistical statistical-2">
+                <div class="statistical-2 statistical-2_BD1">
+                    <canvas id="myChart" class="chartjs"></canvas>
+                </div>
+                <div class="statistical-2 statistical-2_BD2">
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+            <div class="statistical statistical-3">
+                <div class="statistical-3 statistical-3_BD1">
+                    <canvas id="myChart3"></canvas>
+                </div>
+                <div class="statistical-3 statistical-3_BD2">
+                    <canvas id="myChart4"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>

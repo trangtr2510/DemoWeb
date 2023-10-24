@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e6dede;
+}
+.container{
+    position: relative;
+}
+.slider-main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.header--icon{
+    font-size: 3.2rem;
+    margin: 2px 8px;
+}
+.header__navbar--link{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.header__navbar--list{
+    margin-top: 4px;
+    list-style: none;
+    padding-left: 0;
+}
+.header__navbar--item{
+    display: inline-flex;
+    align-items: center;
+    margin: 12px 8px;
+    position: relative;
+    font-size: 2.2rem;
+}
+.header__navbar--item:hover{
+    color: rgba(44, 42, 42, 0.7);
+    cursor: pointer;
+}
+.header__navbar--item--separate::after{
+    border-left: 1px solid var(--text-color);
+    height: 20px;
+    right: -20px;
+}
+.header__navbar--item--separate2::after{
+    border-right: 1px solid var(--text-color);
+    height: 20px;
+    left: -20px;
+}
+.header__navbar--item--separate::after,
+.header__navbar--item--separate2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header__navbar--item, .header--icon{
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+}
+.slider-text{
+    color: var(--text-color);
+    margin-left: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: 8%;
+    bottom: 20%;
+}
+.slider-text-univer, .slider-text__DA{
+    font-size: 5rem;
+}
+.slider-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 180px;
+    height: auto;
+    
+}
+.logo-teacher{
+    position: fixed;
+    bottom: 12%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.teacher{
+    width: 180px;
+    height: auto;
+}
+.classes369-big{
+    font-size: 5rem;
+    font-family: cursive;
+    color: rgb(1, 31, 72);
+}
+.classes369-introduce{
+    font-size: 1.6rem;
+    color: rgba(0, 81, 255, 0.529);
+}
+
+
+/* dang nhap */
+.button--login{
+    display: flex;
+    justify-content: flex-start;
+}
+.login--button{ 
+    position: fixed;
+    left: 10%;
+    bottom: 12%;
+    box-sizing: border-box;
+    margin: 0 15px 0 0;
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px #9999;
+    font-size: 2.2rem;
+    color: var(--text-color);
+    background-color: rgb(237, 131, 193);
+    cursor: pointer;
+    
+}
+.login--button:active{
+    background-color: rgb(168, 60, 108);
+}
+#svg-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#svg-center{
+    position: fixed;
+    top: 0;
+    left: 63%;
+}
+#svg-bottom-right{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+#svg-bottom-center{
+    position: fixed;
+    bottom: 0;
+    left: 17%;
+}
+.svg{
+    stroke: #082168;
+    fill:none;
+    stroke-width: 1.8;
+}
+
+
+.navbar{
+    width: 650px;
+    height: 450px;
+    background-color: rgb(248, 235, 217);
+    display: flex;
+    margin: 0 auto;
+    animation : slideInLeft linear .3s;
+}
+#navbar{
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    z-index: 99999999;
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(calc(100% + 32px));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.login{
+    flex: 1.1;
+    background: linear-gradient(180deg, rgba(100, 204, 197, 1), rgba(202, 100, 204, 0.92));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login--text{
+    display: flex;
+    color: rgb(3, 13, 69);
+    width: 150px;
+    height: 45px;
+}
+.login--logo{
+    flex: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.login--logo__text__import{
+    position: absolute;
+    font-size: 2.3rem;
+    right: 0;
+    bottom: 0;
+}
+.login--text__icon{
+    flex: 1;
+    font-size: 5.2rem;
+    color: rgb(5, 59, 80)
+}
+.login--logo__text{
+    margin-left: 8px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.login--box{
+    margin-top: 30px;
+    width: 200px;
+    height: 240px;
+    border-radius: 12px;
+    box-shadow: 4px 4px #39383868;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login--box__text, .newpassword--text{
+    font-size: 2rem;
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label, .login--box__import-pass{
+    font-size: 1.2rem;
+}
+.login--box__import__text, .newpassword--import__text{
+    box-sizing: border-box;
+    width: calc(100% - 25px);
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(237, 237, 237);
+}
+.login--box__import, .newpassword--import{
+    margin: 15px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.login--box__import__input, .newpassword--import__input{
+    position: relative;
+}
+.login--box__import__icon--eye, .newpassword--import__icon--eye{
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#eye i{
+    cursor: pointer;
+}
+.login--box__import__icon, .newpassword--import__icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    color: var(--white-color);
+    background-color: rgb(23, 107, 135) ;
+}
+.login--box__import__label__forgotpass{
+    text-align: right;
+}
+.login--box__import--forgotpass{
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.login--box__import__label + .login--box__import__label,
+.newpassword--import__label + .newpassword--import__label{
+    margin-top: 5px;
+}
+.login--box__button, .newpassword--button{
+    width: 100%;
+    height: 25px;
+    color: var(--white-color);
+    background-color: rgb(5, 59, 80) ;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+.login--box__button:active, .newpassword--button:active{
+    background-color: rgb(11, 40, 51);
+}
+.login--img{
+    flex: 1.5;
+    background-color: rgba(238, 238, 238, 1);
+    position: relative;
+}
+.login--navbar__img{
+    width: 340px;
+    position: absolute;
+    margin-top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.error{
+    padding-top: 3px;
+    font-size: 1.1rem;
+    color: red;
+}
+.login--close, .newpass--close{
+    color: var(--white-color);
+    background-color: #757070;
+    width: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.newpass--close{
+    border-radius:0 5px 0 0 ;
+}
+.login--close:hover, .newpass--close:hover{
+    background-color: #b29f9f;
+    color:#757070;
+    cursor: pointer;
+}
+
+.newpassword{
+    width: 220px;
+    height: 380px;
+    border-radius: 8px;
+    background-color:  #d8baba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: opacity 0.5s forwards;
+    position: relative;
+}
+#newpassword{
+    position: fixed;
+    top: 60%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 99999999;
+}
+.newpassword--button{
+    margin-top: 5px;
+}
+@keyframes opacity{
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
