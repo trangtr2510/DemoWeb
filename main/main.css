@@ -82,7 +82,8 @@ body.dark{
 .sidebar .menu-bar ul li.active{
     width: calc(100% + 14px);
     background-color: var(--body-color);
-    
+    transition: var(--tran-05);
+    z-index: 100;
 }
 
 .sidebar ul li b:nth-child(1){
@@ -92,7 +93,6 @@ body.dark{
     width: 100%;
     background-color: var(--body-color);
     display: none;
-    transition: var(--tran-05);
 }
 
 .sidebar ul li b:nth-child(1)::before{
@@ -104,6 +104,8 @@ body.dark{
     height: 100%;
     border-bottom-right-radius: 8px;
     background-color: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
 }
 
 .sidebar ul li b:nth-child(2){
@@ -113,7 +115,6 @@ body.dark{
     width: 100%;
     background-color: var(--body-color);
     display: none;
-    transition: var(--tran-05);
 }
 
 .sidebar ul li b:nth-child(2)::before{
@@ -125,11 +126,15 @@ body.dark{
     height: 100%;
     border-top-right-radius: 8px;
     background-color: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
 }
 
 .sidebar ul li.active b:nth-child(1),
 .sidebar ul li.active b:nth-child(2){
     display: block;
+    transition: var(--tran-05);
+    z-index: 100;
 }
 
 .sidebar header{
@@ -226,6 +231,8 @@ body.dark .sidebar header .toggle{
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
+    transition: var(--tran-05);
+    z-index: 100;
 }
 
 .sidebar li a{
@@ -285,6 +292,7 @@ body.dark .sidebar li a:hover .text{
     border-radius: 8px;
     position: relative;
     background-color: var(--primary-color-light);
+    transition: var(--tran-05);
 }
 
 .menu-bar .mode .moon-sun{
@@ -322,7 +330,6 @@ body.dark .menu-bar .mode i.moon{
     cursor: pointer;
     background-color: var(--primary-color-light);
     transition: var(--tran-05);
-    
 }
 
 .toggle-switch .switch{
@@ -352,9 +359,9 @@ body.dark .switch::before{
 
 .home{
     position: relative;
-    left: 250px;
+    left: 245px;
     height: 100vh;
-    width: calc(100% - 250px);
+    width: calc(100% - 245px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -448,7 +455,6 @@ body.dark .switch::before{
     width: 90%;
     height: auto;
     border-radius: 20px;
-    /* box-shadow: 8px 8px #707070 ; */
     box-shadow: 0 0 20px var(--shadow-color);
 }
 
@@ -524,7 +530,6 @@ body.dark .switch::before{
     justify-content: space-around;
     border-bottom: 1px solid var(--text-color);
     padding: 15px 0;
-
 }
 
 .add-new ul a{
@@ -533,6 +538,7 @@ body.dark .switch::before{
     font-size: 20px;
     font-weight: 500;
     padding: 0 5px;
+    transition: var(--tran-05);
 }
 
 .add-new ul li{
@@ -582,7 +588,6 @@ body.dark .switch::before{
     transition: var(--tran-04);
 }
 
-
 .show-add, .show-add2, .show-add3{
     position: absolute;
     top: 100px;
@@ -607,6 +612,7 @@ body.dark .switch::before{
     align-items: center;
     background-color: var(--sidebar-color);
     color: var(--text-color);
+    transition: var(--tran-05);
 }
 
 .User-lecturers{
@@ -631,6 +637,7 @@ body.dark .switch::before{
     margin: 15px 0;
     display: flex;
     align-items: center;
+    transition: var(--tran-05);
 }
 
 .User p.text,
@@ -659,6 +666,7 @@ body.dark .switch::before{
     background-color: var(--addnew-color);
     color: var(--text-color);
     padding: 0 5px;
+    transition: var(--tran-05);
 }
 
 .User .user .import,
@@ -696,6 +704,7 @@ body.dark .switch::before{
     border-radius: 8px;
     cursor: pointer;
     margin: 8px;
+    transition: var(--tran-05);
 }
 
 
@@ -789,6 +798,7 @@ table td i:nth-child(2){
     background-color: var(--home-color);
     color: var(--primary-color-light);
     border-radius: 8px;
+    transition: var(--tran-05);
 }
 
 #excel, #excel2{
@@ -802,12 +812,14 @@ table td i:nth-child(2){
     color: var(--text-color);
     margin: 15px 0;
     padding: 15px 15px;
+    transition: var(--tran-05);
 }
 
 .add-excel .board,
 .add-excel2 .board{
     width: 100%;
     border-collapse: collapse;
+    transition: var(--tran-05);
 }
 
 .add-excel .board tr,
@@ -838,6 +850,7 @@ table td i:nth-child(2){
     outline: 0;
     border: 0;
     border-radius: 8px ;
+    transition: var(--tran-05);
 }
 
 .add-excel #execlInput,
@@ -874,6 +887,7 @@ table td i:nth-child(2){
     min-width: 90px;
     background-color: var(--sidebar-color);
     color: var(--text-color);
+    transition: var(--tran-05);
 }
 .tableContent .board{
     margin: 0 10px;

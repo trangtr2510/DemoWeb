@@ -798,7 +798,7 @@ new Chart("myChart2", {
   }
 });
 
-var xValues = ["SV trong nước", "SV nam", "Sinh viên nữ", "SV nước ngoài", ""];
+var xValues = ["SV trong nước", "SV nam", "SV nữ", "SV nước ngoài", ""];
 var yValues = [499, 300, 199, 100, 0];
 var barColors = ["#9787FF", "#FFA5DA","#0096FF","#FDB600", ""];
 
